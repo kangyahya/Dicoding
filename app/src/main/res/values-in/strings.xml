@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Movie DB</string>
+    <string name="search_hint">Cari film disini</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="movie">FILM</string>
+    <string name="tv">ACARA TV</string>
+    <string name="change_setting">Setelan</string>
+    <string name="overview">Ringkasan</string>
+    <string name="title">Judul</string>
+    <string name="todo">TODO</string>
+    <string name="rating">Peringkat: %s/10 </string>
+    <string name="release_date">Tanggal Rilis : %s </string>
+    <string name="share">Aplikasi Ini dibuat oleh Yahya - Dicoding</string>
+    <string name="airing">Tanggal Penayangan Pertama : %s</string>
+    <string name="favorite">KESUKAANKU</string>
+    <string name="texthintresult">Kami menemukan %1s film dengan kata kunci %2s</string>
+    <string name="texthintresulttv">Kami menemukan %1s acara tv dengan kata kunci %2s</string>
+
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="key_today_reminder">key_today_reminder</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="summary_daily_reminder">Kamu akan mendapatkan notifikasi setiap jam 7 pagi</string>
+    <string name="key_release_reminder">key_release_reminder</string>
+    <string name="summary_release_reminder">Kamu akan mendapatkan notifikasi setiap jam 8 pagi terkait film yang rilis hari ini</string>
+    <string name="release_reminder">Pengingat Rilis</string>
+    <string name="lang_title">Bahasa</string>
+    <string name="langlang">id-ID</string>
+    <string name="summary_lang">Pilih Bahasa</string>
+    <string name="lang">Bahasa</string>
+    <string name="key_lang">key_lang</string>
+    <string name="appwidget_text">Film Favorite</string>
+    <string name="no_item">Tidak ada item</string>
+    <string name="message_daily">Yuk nonton film-film bagus</string>
+    <string name="image">Image</string>
+    <string name="search_tv">Cari acara tv disini</string>
+    <string name="now_paying">Sedang Dimainkan</string>
+    <string name="upcoming">Akan Datang</string>
+    <string name="exit">Keluar</string>
+    <string name="about">Tentang</string>
+    <string name="no_movie_release">No Movie Release Today</string>
+    <string name="release_today_reminder">Pengingat Rilis</string>
+    <string name="released_message">Telah Rilis Hari Ini!</string>
+
+</resources>

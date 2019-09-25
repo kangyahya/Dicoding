@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Favorite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="movie">MOVIES</string>
+    <string name="tv">TV SHOWS</string>
+    <string name="change_setting">Language Settings</string>
+    <string name="overview">overview</string>
+    <string name="rating">Rating: %s/10 </string>
+    <string name="release_date">Release Date : %s </string>
+    <string name="airing_date">First Airing : %s </string>
+    <string name="act_exit">Exit</string>
+    <string name="dialog_exit">are you sure?</string>
+    <string name="yes_">Yes</string>
+    <string name="no_">No</string>
+    <string name="has_been_add">This tv show has been add to your favorite</string>
+    <string name="has_been_remove">This tv show has been remove from your favorite</string>
+    <string name="has_been_add_m">This movie has been add to your favorite</string>
+    <string name="has_been_remove_m">This movie has been remove from your favorite</string>
+</resources>

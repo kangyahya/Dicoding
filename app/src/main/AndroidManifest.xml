@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rtikcirebonkota.thecataloguemovie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-permission
+        android:name="com.rtikcirebonkota.thecataloguemovie.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <uses-permission
+        android:name="com.rtikcirebonkota.thecataloguemovie.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_tmdb"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".utils.SettingsActivity"/>
+
+        <receiver android:name=".widgets.MovieWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/movie_widget_info" />
+        </receiver>
+
+        <activity android:name=".ResultSearchActivity" />
+
+        <receiver
+            android:name=".notification.DailyReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver android:name=".notification.ReleaseReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/root_preferences" />
+
+        <activity android:name=".DetailTvActivity" />
+        <activity android:name=".DetailMovieActivity" />
+
+        <provider
+            android:name=".provider.MovieProvider"
+            android:authorities="com.rtikcirebonkota.thecataloguemovie"
+            android:exported="true"
+            android:readPermission="com.rtikcirebonkota.thecataloguemovie.READ_DATABASE"
+            android:writePermission="com.rtikcirebonkota.thecataloguemovie.WRITE_DATABASE" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".widgets.MovieWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+    </application>
+
+</manifest>

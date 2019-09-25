@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#fff"
+    android:outlineAmbientShadowColor="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/item_poster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:contentDescription="TODO" />
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/item_poster"
+        android:text="@string/title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/item_date_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_title"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/item_poster"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:text="@string/release_date"
+        />
+    <TextView
+        android:id="@+id/detail_overview_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_date_detail"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/item_poster"
+        android:ellipsize="end"
+        android:fontFamily="@font/algerian"
+        android:text="@string/overview" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_overview_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="27dp"
+        android:layout_toEndOf="@+id/item_poster"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:text="@string/overview" />
+
+</RelativeLayout>

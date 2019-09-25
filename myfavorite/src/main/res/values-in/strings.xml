@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Favorite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="movie">FILM</string>
+    <string name="tv">ACARA TV</string>
+    <string name="change_setting">Pengaturan Bahasa</string>
+    <string name="overview">Ringkasan</string>
+    <string name="rating">Peringkat: %s/10 </string>
+    <string name="release_date">Rilis : %s </string>
+    <string name="airing_date">Pertama Tayang : %s </string>
+    <string name="act_exit">Keluar</string>
+    <string name="dialog_exit">Apa kamu yakin ?</string>
+    <string name="yes_">Ya</string>
+    <string name="no_">Tidak</string>
+    <string name="has_been_add">Acara tv ini telah ditambahkan ke favorite Anda</string>
+    <string name="has_been_remove">Acara tv ini telah dihapuskan dari favorite Anda</string>
+    <string name="has_been_add_m">Film ini telah ditambahkan ke favorite Anda</string>
+    <string name="has_been_remove_m">Film ini telah dihapuskan dari favorite Anda</string>
+
+</resources>
